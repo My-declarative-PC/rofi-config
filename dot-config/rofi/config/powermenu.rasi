@@ -43,7 +43,7 @@ textbox-prompt-colon {
     background-color:               @BG;
     text-color:                     @BG;
     padding:                        8px 12px 8px 12px;
-    font:			                "FiraCode 12";
+    font:			                "FiraCodeNerdFontMono 12";
 }
 
 entry {
