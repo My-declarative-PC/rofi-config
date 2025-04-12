@@ -1,6 +1,12 @@
 @import "~/.config/rofi/config/catppuccin-mocha.rasi"
 @import "~/.config/rofi/config/font.rasi"
 
+configuration {
+    show-icons:      true;
+    display-drun:    "";
+    disable-history: false;
+}
+
 * {
   selected-active-foreground:  @background;
   lightfg:                     @text;
@@ -85,9 +91,10 @@ element-icon {
     text-color:       inherit;
 }
 window {
-    padding:          5;
+    padding:          15;
     background-color: @background;
-    border:           1;
+    border:           5;
+    border-radius:    15;
 }
 mainbox {
     padding: 0;
@@ -110,7 +117,7 @@ listview {
     border:       2px dash 0px 0px ;
 }
 scrollbar {
-    width:        4px ;
+    width:        1px ;
     padding:      0;
     handle-width: 8px ;
     border:       0;
