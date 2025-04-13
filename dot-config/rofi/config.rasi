@@ -91,6 +91,8 @@ element-icon {
     text-color:       inherit;
 }
 window {
+    width:            60%;
+    height:           60%;
     padding:          15;
     background-color: @background;
     border:           5;
