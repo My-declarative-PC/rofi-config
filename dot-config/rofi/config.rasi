@@ -3,12 +3,13 @@
 
 /*****----- Configuration -----*****/
 configuration {
-    modi:                "run,drun,filebrowser,window";
+    modi:                "drun,run,filebrowser,window,calc";
     show-icons:          true;
     display-drun:        "";
     display-run:         "";
     display-filebrowser: "";
     display-window:      "";
+    display-calc:        "";
     drun-display-format: "{name}";
     window-format:       "{w} · {c} · {t}";
 }
@@ -121,7 +122,7 @@ mode-switcher{
     text-color:                  @foreground;
 }
 button {
-    padding:                     15px;
+    padding:                     5px;
     border-radius:               10px;
     background-color:            @alternate-normal-background;
     text-color:                  @normal-foreground;
