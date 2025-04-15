@@ -115,11 +115,12 @@ entry {
 }
 
 /*****----- Mode Switcher -----*****/
-mode-switcher{
+mode-switcher {
     enabled:                     true;
-    spacing:                     20px;
+    spacing:                     10px;
     background-color:            transparent;
     text-color:                  @foreground;
+    orientation:                 vertical;
 }
 button {
     padding:                     5px;
