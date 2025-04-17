@@ -48,7 +48,7 @@ window {
     anchor:                      center;
     fullscreen:                  false;
     width:                       60%;
-    height:                      60%;
+    height:                      100%;
     x-offset:                    0px;
     y-offset:                    0px;
 
@@ -65,13 +65,13 @@ mainbox {
     enabled:                     true;
     spacing:                     0px;
     background-color:            transparent;
-    orientation:                 horizontal;
+    orientation:                 vertical;
     children:                    [ "imagebox", "listbox" ];
 }
 imagebox {
     padding:                     20px;
     background-color:            transparent;
-    background-image:            url("~/.wallpaper", height);
+    background-image:            url("~/.wallpaper", width);
     orientation:                 vertical;
     children:                    [ "inputbar", "dummy", "mode-switcher" ];
 }

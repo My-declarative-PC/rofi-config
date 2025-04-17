@@ -9,9 +9,10 @@ FORECAST_DAYS="${FORECAST_DAYS:-2}" # 0 current weather, 1 today, 2 today & tomo
 
 weather_help="Type the name of a place and press <b>Enter</b> to show its weather forecast"
 
+city=stavropol
 weather=$(curl -s wttr.in/"$city"?lang=ru\&ATFn$FORECAST_DAYS)
 
-while city=$($ROFI -dmenu -i -mesg "$weather_help&#x0a;$weather" -p "Place" -theme-str "window{height:100%;}listview{enabled:false;}mainbox{orientation:vertical;}imagebox{background-image:url('~/.wallpaper',width);}"); do
+while city=$($ROFI -dmenu -i -mesg "$weather_help&#x0a;$weather" -p "Place" -theme-str "listview{enabled:false;}"); do
     city=$(echo $city | tr " " "+")
     weather=$(curl -s wttr.in/"$city"?lang=ru\&ATFn$FORECAST_DAYS)
 done
